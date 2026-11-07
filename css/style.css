@@ -542,3 +542,31 @@ body.viewer-open #grain,body.viewer-open .vignette,body.viewer-open .scratch,bod
   .fd-hint{display:none}
   .fd-top{flex-wrap:wrap}
 }
+
+/* ---------- call sheet: send animation + confirmation ---------- */
+.callsheet .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.cs-send{gap:12px;overflow:hidden}
+.cs-plane{flex:none;transition:transform .5s var(--ease)}
+.cs-send:hover .cs-plane{transform:translate(4px,-3px) rotate(-8deg)}
+.callsheet.is-busy .cs-send{pointer-events:none}
+.callsheet .cs-head,.callsheet label,.callsheet .cs-actions{transition:opacity .35s}
+.callsheet.is-sending .cs-head~label,.callsheet.is-sending .cs-actions,.callsheet.is-done .cs-head~label,.callsheet.is-done .cs-actions{opacity:0;pointer-events:none}
+.cs-stage{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;z-index:5;opacity:0;visibility:hidden}
+.cs-stage.on{visibility:visible}
+.cs-env{overflow:visible;filter:drop-shadow(0 24px 40px rgba(226,51,31,.35))}
+.cs-env .env-back{fill:#1b1814;stroke:var(--bone);stroke-width:2}
+.cs-env .env-paper{fill:var(--bone)}
+.cs-env .env-line{stroke:#9d978a;stroke-width:3;stroke-linecap:round;fill:none}
+.cs-env .env-pocket{fill:#14120F;stroke:var(--bone);stroke-width:2;stroke-linejoin:round}
+.cs-env .env-flap{fill:var(--red);stroke:var(--bone);stroke-width:2;stroke-linejoin:round}
+.cs-trail{position:absolute;right:50%;top:50%;width:140px;height:3px;margin-top:-1px;background:linear-gradient(90deg,transparent,var(--bone));opacity:0;transform-origin:100% 50%}
+.cs-trail:nth-of-type(2){margin-top:-14px;width:90px}.cs-trail:nth-of-type(3){margin-top:12px;width:110px}
+.cs-done{position:absolute;inset:6px;z-index:6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:30px;background:var(--ink-2)}
+.cs-done h4{font-family:var(--f-display);font-weight:900;font-size:clamp(2.2rem,4.4vw,4rem);line-height:.9;text-transform:uppercase}
+.cs-done p{max-width:34ch;color:var(--mute)}
+.cs-check{overflow:visible}
+.cs-check circle{fill:none;stroke:var(--red);stroke-width:2.5;stroke-dasharray:152;stroke-dashoffset:152}
+.cs-check path{fill:none;stroke:var(--bone);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:42;stroke-dashoffset:42}
+.cs-done.show .cs-check circle,.cs-done.show .cs-check path{stroke-dashoffset:0}
+.cs-status a{color:var(--bone);text-decoration:underline}
+.cs-status.is-err{color:var(--red)}
