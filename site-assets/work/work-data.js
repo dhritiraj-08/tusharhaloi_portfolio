@@ -12,6 +12,16 @@ window.WORK = [
   },
   "videos": [
    {
+    "key": "Client Work/cover video",
+    "title": "Client Work",
+    "duration": 74.3,
+    "w": 2880,
+    "h": 2160,
+    "poster": "site-assets/work/client-work/cover-poster.webp",
+    "preview": "site-assets/work/client-work/cover.mp4",
+    "src": "site-assets/work/client-work/cover-full.mp4"
+   },
+   {
     "key": "Client Work/kitefest (better) longform",
     "title": "Kitefest (better) Longform",
     "duration": 76.9,
@@ -35,6 +45,16 @@ window.WORK = [
   },
   "videos": [
    {
+    "key": "Colorgrading/cover video",
+    "title": "Colorgrading",
+    "duration": 25.8,
+    "w": 3840,
+    "h": 2160,
+    "poster": "site-assets/work/colorgrading/cover-poster.webp",
+    "preview": "site-assets/work/colorgrading/cover.mp4",
+    "src": "site-assets/work/colorgrading/cover-full.mp4"
+   },
+   {
     "key": "Colorgrading/CG1",
     "title": "CG1",
     "duration": 39.0,
@@ -57,6 +77,16 @@ window.WORK = [
    "h": 2160
   },
   "videos": [
+   {
+    "key": "Motion Design/cover video",
+    "title": "Motion Design",
+    "duration": 15.2,
+    "w": 3840,
+    "h": 2160,
+    "poster": "site-assets/work/motion-design/cover-poster.webp",
+    "preview": "site-assets/work/motion-design/cover.mp4",
+    "src": "site-assets/work/motion-design/cover-full.mp4"
+   },
    {
     "key": "Motion Design/final saas sfx 111",
     "title": "Final Saas Sfx 111",
@@ -110,6 +140,16 @@ window.WORK = [
    "h": 3840
   },
   "videos": [
+   {
+    "key": "Short form Videos/cover video",
+    "title": "Short Form Videos",
+    "duration": 23.2,
+    "w": 2160,
+    "h": 3840,
+    "poster": "site-assets/work/short-form-videos/cover-poster.webp",
+    "preview": "site-assets/work/short-form-videos/cover.mp4",
+    "src": "site-assets/work/short-form-videos/cover-full.mp4"
+   },
    {
     "key": "Short form Videos/123",
     "title": "123",
