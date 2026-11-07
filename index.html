@@ -275,8 +275,9 @@
 <!-- ============ FOLDER GRID ============ -->
 <div id="folder" role="dialog" aria-modal="true" aria-label="Folder" aria-hidden="true" hidden>
   <div class="fd-top">
-    <div class="fd-title"><span class="rec-dot"></span><div><small id="fd-kicker">FOLDER 01 / 04</small><h3 id="fd-title"></h3></div></div>
-    <button type="button" id="fd-close" aria-label="Close folder">CLOSE ✕</button>
+    <button type="button" id="fd-close" class="fd-back" aria-label="Back to the work folders"><span class="fd-arrow" aria-hidden="true">←</span><span>BACK</span></button>
+    <div class="fd-title"><div><small id="fd-kicker">FOLDER 01 / 04</small><h3 id="fd-title"></h3></div></div>
+    <p class="fd-hint" aria-hidden="true">HOVER TO PREVIEW · CLICK TO PLAY · ESC TO GO BACK</p>
   </div>
   <div class="fd-scroll" id="fd-scroll" data-lenis-prevent>
     <p class="fd-blurb" id="fd-blurb"></p>

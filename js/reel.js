@@ -166,9 +166,10 @@
       it.innerHTML = `
         <img src="${esc(v.poster)}" alt="" loading="lazy" draggable="false">
         <video muted loop playsinline preload="none" data-src="${esc(v.preview)}" aria-hidden="true" tabindex="-1"></video>
+        <i class="fd-holes fd-h-t" aria-hidden="true"></i><i class="fd-holes fd-h-b" aria-hidden="true"></i>
         <span class="fd-n" aria-hidden="true">${pad(n + 1)}</span>
         <span class="fd-play" aria-hidden="true">▶</span>
-        <div class="fd-cap"><h4>${esc(v.title)}</h4><p>${[mmss(v.duration), v.year].filter(Boolean).map(esc).join(' · ')}</p></div>`;
+        <span class="fd-dur" aria-hidden="true">${mmss(v.duration)}</span>`;
       D.grid.appendChild(it);
       v.card = it;
       it.addEventListener('click', () => openPlayer(f.videos, n, it));
@@ -191,8 +192,9 @@
       const r = (card || document.body).getBoundingClientRect();
       const from = `inset(${r.top}px ${innerWidth - r.right}px ${innerHeight - r.bottom}px ${r.left}px)`;
       gsap.fromTo(D.el, { clipPath: from }, { clipPath: 'inset(0px 0px 0px 0px)', duration: 0.85, ease: 'power4.inOut' });
-      gsap.from('.fd-top > *', { y: -16, opacity: 0, stagger: 0.08, duration: 0.6, delay: 0.5, ease: 'power3.out' });
-      gsap.from('.fd-blurb, .fd-item', { y: 40, opacity: 0, stagger: 0.07, duration: 0.8, delay: 0.55, ease: 'power3.out', clearProps: 'transform,opacity' });
+      gsap.from('.fd-top > *', { y: -16, opacity: 0, stagger: 0.08, duration: 0.6, delay: 0.5, ease: 'power3.out', clearProps: 'transform,opacity' });
+      gsap.from('.fd-blurb', { y: 30, opacity: 0, duration: 0.7, delay: 0.55, ease: 'power3.out', clearProps: 'transform,opacity' });
+      gsap.from('.fd-item', { y: 70, opacity: 0, rotation: 2.5, scale: 0.92, stagger: 0.09, duration: 0.9, delay: 0.6, ease: 'back.out(1.3)', clearProps: 'transform,opacity' });
     }
     setTimeout(() => $('#fd-close').focus({ preventScroll: true }), 100);
   }

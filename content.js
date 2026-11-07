@@ -100,21 +100,23 @@ window.SITE = {
     heading: "SELECTED *WORK*",
     intro: "Pick a folder. Open it. Press play.",
     overrides: {
-      "client":      { label: "Client",     blurb: "Films made for real clients, start to finish." },
-      "color":       { label: "Color",      blurb: "Grades, looks and colour-led edits." },
-      "saas style":  { label: "SaaS Style", blurb: "Clean product & software promos with tight motion and sound design." },
-      "short form":  { label: "Short Form", blurb: "Reels and shorts built to stop the scroll." },
+      "Client Work":       { label: "Client Work",       blurb: "Films made for real clients, start to finish." },
+      "Colorgrading":      { label: "Colorgrading",      blurb: "Grades, looks and colour-led edits." },
+      "Motion Design":     { label: "Motion Design",     blurb: "Clean product, SaaS and podcast edits with tight motion and sound design." },
+      "Short form Videos": { label: "Short Form Videos", blurb: "Reels and shorts built to stop the scroll." },
 
-      "client/kitefest (better) longform": { title: "Kitefest — Longform", year: "2025" },
-      "color/CG1":                         { title: "CG1 — Colour Grade", year: "2025" },
-      "saas style/final saas sfx 111":     { title: "SaaS Promo — SFX Cut", year: "2025" },
-      "saas style/MACC":                   { title: "MACC", year: "2025" },
-      "saas style/new apple":              { title: "New Apple", year: "2025" },
-      "short form/123":                    { title: "123", year: "2025" },
-      "short form/2nd acc made":           { title: "2nd Acc Made", year: "2025" },
-      "short form/Puja 1":                 { title: "Puja 1", year: "2025" },
-      "short form/pagla is pagla":         { title: "Pagla Is Pagla", year: "2025" },
-      "short form/v1 sfx":                 { title: "V1 — SFX", year: "2025" }
+      "Client Work/kitefest (better) longform":  { title: "Kitefest — Longform", year: "2025" },
+      "Colorgrading/CG1":                        { title: "CG1 — Colour Grade", year: "2025" },
+      "Motion Design/final saas sfx 111":        { title: "SaaS Promo — SFX Cut", year: "2025" },
+      "Motion Design/MACC":                      { title: "MACC", year: "2025" },
+      "Motion Design/new apple":                 { title: "New Apple", year: "2025" },
+      "Motion Design/viral podcast edit style":  { title: "Viral Podcast Edit Style", year: "2025" },
+      "Short form Videos/123":                   { title: "123", year: "2025" },
+      "Short form Videos/2nd acc made":          { title: "2nd Acc Made", year: "2025" },
+      "Short form Videos/Puja 1":                { title: "Puja 1", year: "2025" },
+      "Short form Videos/cm ":                   { title: "CM", year: "2025" },
+      "Short form Videos/pagla is pagla":        { title: "Pagla Is Pagla", year: "2025" },
+      "Short form Videos/v1 sfx":                { title: "V1 — SFX", year: "2025" }
     }
   },
 
